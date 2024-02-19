@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/chatbot.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChatGPT Clone</title>
+</head>
+<body>
+    <!-- html markup for static chat container starts here -->
+    <div class="Chat-Container">
+        <!-- <div class="Chat-content">
+            <div class="Chat-details">
+                <img src="images/chatbot.jpg" alt="chatbox-image">
+                <div class="typing-animation">
+                    <div class="typing-dot" style="--delay: 0.2s"></div>
+                    <div class="typing-dot" style="--delay: 0.3s"></div>
+                    <div class="typing-dot" style="--delay: 0.4s"></div>
+                </div>
+            </div>
+        </div> -->
+    </div> 
+    <!-- html markup for static chat ends here -->
+
+    <!-- typing container html markup starts here -->
+    <div class="typing-container">
+        <div class="typing-content">
+            <div class="typing-textarea">
+                <textarea  id="chat-input" placeholder="Enter a prompt here" required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+            <div class="typing-controls">
+                <span id="theme-btn" class="material-symbols-outlined">light_mode</span>
+                <span id="delete-btn" class="material-symbols-outlined">delete</span>
+            </div>
+        </div>
+    </div>
+    <!-- typing container html markup starts here -->
+
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
