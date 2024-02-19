@@ -5,7 +5,7 @@
 // const deleteButton = document.querySelector("#delete-btn");
 
 // let userText = null;
-// const API_KEY = "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";
+// const API_KEY = "";
 
 // const createElement = (html, className) => {
 //     const chatDiv = document.createElement("div");
