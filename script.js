@@ -18,7 +18,7 @@ const loadDataFromLocalStorage = () => {
 
     const defaultText = `<div class="default-text">
                             <h1>ChatGPT Clone</h1>
-                            <p>Start a conversation and explore the power of AI. <br> Your chat history wil be displayed here.</p>
+                            <p>Start a conversation and explore the power of AI. <br> Your chat history will be displayed here.</p>
                         </div>`
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
