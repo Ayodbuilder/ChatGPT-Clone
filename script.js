@@ -6,11 +6,11 @@ const deleteButton = document.querySelector("#delete-btn");
 
 
 let userText = null;
-const API_KEY = "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";
+const API_KEY = "";
 const initialHeight = chatInput.scrollHeight;
 
 const loadDataFromLocalStorage = () => {
-    // Load saved chats and theme from local storage and apply/add on the page
+    
     const themeColor = localStorage.getItem("theme-color");
 
     document.body.classList.toggle("light-mode", themeColor === "light_mode");
@@ -23,7 +23,7 @@ const loadDataFromLocalStorage = () => {
 
     chatContainer.innerHTML = localStorage.getItem("all-chats") || defaultText;
     chatContainer.scrollTo(0, chatContainer.scrollHeight);
-    // Scroll to bottom of the chat container
+    
 }
 
 const createElement = (html, className) => {
@@ -72,7 +72,7 @@ const getChatResponse = async (incomingChatDiv) => {
         pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
     }
 
-    // Remove the typing animation, append the paragraph element and save the chats to local storage
+
     incomingChatDiv.querySelector(".typing-animation").remove();
     incomingChatDiv.querySelector(".chat-details").appendChild(pElement);
 
@@ -82,12 +82,12 @@ const getChatResponse = async (incomingChatDiv) => {
 }
 
 const copyResponse = (copyBtn) => {
-    // Copy the text content of the response to the clipboard
+    
     const responseTextElement = copyBtn.parentElement.querySelector("p");
     navigator.clipboard.writeText(responseTextElement.textContent);
     copyBtn.textContent = "done";
 
-    // Set a timeout to reset the content of the copy icon after a delay
+    
     setTimeout(() => copyBtn.textContent = "content_copy", 1000);
 }
 
